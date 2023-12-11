@@ -27,5 +27,3 @@ walkability_by_state_df <- walkability_by_state_df[-c(1, 40), ]
 # left join both dataframes
 final_df <- left_join(obesity_df, walkability_by_state_df, c("state_abv"="CBSA_Name"))
 
-# exporting to CSV
-#write.csv(final_df, "C:\\Users\\nondh\\OneDrive\\Documents\\0 UW\\INFO 201\\final proj\\obesity_walkability.csv", row.names=FALSE)
